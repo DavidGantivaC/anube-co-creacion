@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artesanías de Nuestra Tierra</title>
+    <title>Galería de Productos - Artesanías de Nuestra Tierra</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
@@ -25,18 +25,15 @@
             <a href="register.html" class="button button-primary">Regístrate</a>
         </div>
     </header>
-    <!-- Contenido principal -->
+    <!-- Contenido de la galería -->
     <main>
-        <section id="promocion" class="section">
-            <div class="card_center">
-                <h1>¡Bienvenidos a "Artesanías de Nuestra Tierra"!</h1>
-                <img src="img/central.png" alt="Promoción de Artesanías de Nuestra Tierra">
-                <h2>Descubre la belleza y el encanto de las artesanías de Boyacá y Cundinamarca...</h2>
+        <section class="section">
+            <h2>Galería de Productos</h2>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar productos o artesanos">
+                <button>Buscar</button>
             </div>
-        </section>
-
-        <section id="productos-preview" class="section">
-            <h2>Productos Destacados</h2>
+            <div id="search-results" class="search-results"></div>
             <div class="container">
                 <div class="card">
                     <img src="img/1.png" alt="Producto 1">
@@ -53,17 +50,22 @@
                     <h3>Hilo</h3>
                     <p>Productos elaborados con la más alta calidad...</p>
                 </div>
+                <div class="card">
+                    <img src="img/4.png" alt="Producto 4">
+                    <h3>Cerámica</h3>
+                    <p>Productos elaborados con la más alta calidad...</p>
+                </div>
+                <div class="card">
+                    <img src="img/5.png" alt="Producto 5">
+                    <h3>Lana</h3>
+                    <p>Productos elaborados con la más alta calidad...</p>
+                </div>
+                <div class="card">
+                    <img src="img/6.png" alt="Producto 6">
+                    <h3>Tela</h3>
+                    <p>Productos elaborados con la más alta calidad...</p>
+                </div>
             </div>
-            <div class="view-more">
-                <a href="gallery.html">Ver todos los productos</a>
-            </div>
-        </section>
-
-        <section id="informacion" class="section">
-            <h2>Artesanías de Nuestra Tierra</h2>
-            <p>Explora nuestro catálogo virtual y déjate cautivar por la riqueza cultural y la historia...</p>
-            <p>Con "Artesanías de Nuestra Tierra", apoyas directamente a las comunidades locales...</p>
-            <p>¡Embárcate en un viaje de descubrimiento y encuentra tu próxima joya artesanal hoy mismo!</p>
         </section>
     </main>
 
@@ -73,12 +75,13 @@
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="https://myfacebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
                 <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/DavidGantivaC/anube-co-creacion"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="mailto:davidgantiva1@gmail.com"><i class="fas fa-envelope"></i> myemail@gmail.com</a></li>
+                <li><a href="https://github.com"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="mailto:myemail@gmail.com"><i class="fas fa-envelope"></i> myemail@gmail.com</a></li>
                 <li><a href="tel:3254562545"><i class="fas fa-phone-alt"></i> 3254562545</a></li>
             </ul>
         </nav>
         <p>&copy; 2024 Artesanías de Nuestra Tierra. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
