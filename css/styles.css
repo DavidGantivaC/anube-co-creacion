@@ -83,7 +83,6 @@ body {
     border: 2px solid #28844B;
 }
 
-
 .action-button a {
     text-decoration: none;
     color: #28844B;
@@ -177,14 +176,25 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan  en la siguiente linea*/
+    justify-content: space-around; /* Esto centrará tus tarjetas en la línea */
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
+    overflow-x: auto; /* Agrega desplazamiento horizontal si los elementos no caben en una fila */
 }
 
 .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-g {
     width: calc(33.33% - 20px);
     margin: 10px;
     background-color: #FFFFFF;
@@ -198,7 +208,18 @@ body {
     color: #28844B;
 }
 
+.card-g h2, .card h3 {
+    color: #28844B;
+}
+
 .card p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555555;
+    text-align: justify;
+}
+
+.card-g p {
     font-size: 16px;
     margin-top: 10px;
     color: #555555;
@@ -211,9 +232,16 @@ body {
     border-radius: 5px;
 }
 
+.card-g img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .view-more {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px; /* Agrega un margen inferior */
 }
 
 .view-more a {
@@ -225,6 +253,7 @@ body {
     border: 2px solid #28844B;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Hace que el botón ocupe solo el ancho necesario */
 }
 
 .view-more a:hover {
@@ -300,4 +329,17 @@ body {
     .card {
         width: calc(100% - 20px);
     }
+    .card-g {
+        width: calc(100% - 20px);
+    }
+}
+
+.card-g {
+    transition: all 0.3s ease;
+    border: 1px solid transparent; /* Asegúrate de tener un borde transparente en el estado normal */
+}
+
+.card-g:hover {
+    transform: scale(1.05); /* Esto hará que el producto se agrande un poquito */
+    border: 1px solid #000; /* Esto cambiará el color del borde */
 }
