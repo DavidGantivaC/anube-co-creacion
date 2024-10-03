@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: STEWARD example
+  namespace: default
+  description: Servicio para otorgar aprobaciones de despliegues en ambientes productivos
+  # Example for optional annotations
+  annotations:
+    grafana/overview-dashboard: 'http://localhost:3000/d-solo/adz3vnxqwiqrkb/tablero-de-ejemplo?orgId=1&panelId=1'
+    
+  #   github.com/project-slug: backstage/backstage
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: aprobadores@example.com
+  lifecycle: Deploy
